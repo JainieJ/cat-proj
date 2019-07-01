@@ -1,0 +1,14 @@
+.Cat {
+  background: linear-gradient(
+    135deg,
+    rgba(204, 197, 185, 0.3),
+    rgba(204, 197, 185, 0.5),
+    rgba(235, 94, 40, 0.3),
+    rgba(235, 94, 40, 0.8)
+  );
+  min-height: calc(100vh - 56px);
+}
+
+.Cat-card {
+  box-shadow: 2px 3px 10px 4px rgba(0, 0, 0, 0.26);
+}

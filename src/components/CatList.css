@@ -1,0 +1,51 @@
+.CatList {
+  background: linear-gradient(
+    135deg,
+    rgba(204, 197, 185, 0.3),
+    rgba(204, 197, 185, 0.5),
+    rgba(235, 94, 40, 0.3),
+    rgba(235, 94, 40, 0.8)
+  );
+  min-height: calc(100vh - 56px);
+}
+
+.CatList-title {
+  font-size: 3rem;
+}
+
+.Catlist-img-container {
+  border-radius: 50%;
+  box-shadow: 2px 3px 10px 4px rgba(0, 0, 0, 0.26);
+}
+
+.Catlist-cat {
+  color: #413c58;
+  display: block;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
+  position: relative;
+}
+
+.Catlist-cat::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 5px;
+  left: 30%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s step-end 0s;
+  width: 0;
+}
+
+.Catlist-cat:hover {
+  color: #413c58;
+  text-decoration: none;
+}
+
+.Catlist-cat:hover::after {
+  width: 38%;
+  /* left: 50%; */
+}
